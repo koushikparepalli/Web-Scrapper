@@ -1,5 +1,3 @@
-# doing necessary imports
-
 from flask import Flask, render_template, request,jsonify
 # from flask_cors import CORS,cross_origin
 import requests
@@ -8,9 +6,6 @@ from urllib.request import urlopen as uReq
 import pymongo
 
 app = Flask(__name__)  # initialising the flask app with the name 'app'
-
-
-
 
 @app.route('/',methods=['POST','GET']) # route with allowed methods as POST and GET
 def index():
